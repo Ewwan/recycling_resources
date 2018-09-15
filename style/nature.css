@@ -1,0 +1,495 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: Scriptina;
+  src: url(../scriptina_pro/scriptina_pro.eot);
+  src: url(../scriptina_pro/scriptina_pro.eot?#iefix) format("embedded-opentype"),
+      url(../scriptina_pro/scriptina_pro.svg#scriptina_proregular) format("svg"),
+      url(../scriptina_pro/scriptina_pro.woff) format("woff"),
+      url(../scriptina_pro/scriptina_pro.ttf) format("truetype");
+}
+
+@-ms-viewport {
+  zoom: 1.0;
+  width: device-width;
+}
+
+@viewport {
+  zoom: 1.0;
+  width: device-width;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: Verdana, "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+  line-height: 2rem;
+  font-size: 1em;
+  color: rgb(51, 51, 51);
+  background-color: #fff;
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+strong, b {
+  font-weight: bold;
+}
+em, i {
+  font-style: italic;
+}
+a {
+  text-decoration: none;
+  color: rgb(64, 128, 0);
+}
+a:hover {
+  color: rgb(89, 179, 0);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+#main_content p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+main, nav, header, #main_content, aside, article, footer {
+  display: block;
+}
+
+/*header, #main_navi, #left_column, main, aside, footer {
+  border: 1px solid rgb(51, 51, 51);
+}*/
+#main_navi {
+  width: 100%;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  position: fixed;
+}
+
+#main_navi ul {
+  display: table;
+  width: 50%;
+  height: 100%;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#main_navi ul li {
+  display: table-cell;
+  line-height: 400%;
+  text-decoration: none;
+  width: 12.5%;
+  height: 100%;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-text-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  -moz-text-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  text-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+#main_navi ul li:hover {
+  background-color: rgba(255, 249, 230, .7);
+
+  -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+
+  -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+#main_navi ul li a {
+  display: block;
+  color: rgb(255, 249, 230);
+  text-align: center;
+  font-weight: bold;
+}
+#main_navi ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+#main_navi ul li#current {
+  background-color: rgba(255, 249, 230, .7);
+
+  -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+
+  -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+#main_navi ul li#current a{
+    color: rgb(255, 255, 255);
+}
+
+a#logo {
+  width: 25vh;
+  height: 25vh;
+  background: url(../media/earth_sprint.png) no-repeat;
+  position: absolute;
+  top: .5vh;
+  right: .5vw;
+  z-index: 1;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+a#logo:hover {
+  background-position: left bottom;
+}
+
+#main_content, #left_column, aside {
+  float: left;
+
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+#main_content {
+  width: 60%;
+  min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 20%;
+  right: 20%;
+  padding: 2rem;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#main_content, #main_navi, #left_column, aside {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main {
+  margin-bottom: 22vh;
+  margin-top: 2vh;
+}
+
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#left_column, aside {
+  width: 18%;
+}
+
+aside {
+  padding: 1vh .5vw 0 .5vw;
+  margin-right: 1%;
+  margin-left: 1%;
+  left: 79%;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#left_column {
+  margin-bottom: 2vh;
+  right: 79%;
+  margin-right: 1%;
+  margin-left: 1%;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#left_column ul {
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#left_column ul li {
+  line-height: 3rem;
+  height: 20%;
+}
+#left_column ul li a {
+  display: block;
+  color: rgb(255, 249, 230);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+
+  -webkit-text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  -moz-text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+#left_column ul li a:hover {
+  color: rgb(64, 128, 0);
+  -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+#left_column ul li:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+#left_column ul li:first-child:hover {
+  -webkit-border-top-left-radius: 9px;
+  -moz-border-top-left-radius: 9px;
+  border-top-left-radius: 9px;
+
+  -webkit-border-top-right-radius: 9px;
+  -moz-border-top-right-radius: 9px;
+  border-top-right-radius: 9px;
+}
+#left_column ul li:last-child:hover {
+  -webkit-border-bottom-left-radius: 9px;
+  -moz-border-bottom-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+
+  -webkit-border-bottom-right-radius: 9px;
+  -moz-border-bottom-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+header {
+    background: rgb(255, 249, 230) url(../media/woods.jpg) no-repeat bottom fixed;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+}
+
+header h1 {
+  font-family: Scriptina;
+  font-size: 5rem;
+  padding: 0 1rem 0 2rem;
+  margin: 0;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 6rem;
+  line-height: 80vh;
+  letter-spacing: 1rem;
+
+  -webkit-text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  -moz-text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#main_content a.linkbox {
+  color: inherit;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  display: block;
+  padding: 1rem .5rem 1rem 3.75rem;
+  min-height: 3.5rem;
+  background: rgba(255, 249, 230, .7) url(../media/icon_pdf.png) no-repeat .3rem .5rem;
+
+  -webkit-background-size: 3rem auto;
+  -moz-background-size: 3rem auto;
+  background-size: 3rem auto;
+
+  -webkit-box-shadow: 1px 2px 4px 1px rgba(255, 255, 255, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 1px 2px 4px 1px rgba(255, 255, 255, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 1px 2px 4px 1px rgba(255, 255, 255, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  position: relative;
+}
+
+#main_content a.linkbox h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#main_content a.linkbox span {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.4rem;
+  background-color: rgba(64, 128, 0, .4);
+
+  -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+
+  position: absolute;
+  top: -.6rem;
+  right: -1.8rem;
+
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+
+  opacity: 0;
+  -webkit-transition: opacity .5s linear;
+  -moz-transition: opacity .5s linear;
+  transition: opacity .5s linear;
+}
+
+#main_content a.linkbox:hover span {
+  opacity: 1;
+}
+
+footer {
+  background-color: rgba(60, 79, 119, 0.1);
+  line-height: 1.5rem;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  border-radius: .4rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+footer div#copyright {
+  font-size: 0.8rem;
+  padding: 8rem 4rem 1rem 4rem;
+  text-align: right;
+}
+footer a {
+  color: #36486b;
+}
+footer a:hover {
+  color: rgba(60, 79, 119, 0.6);
+}
+footer div#social_media {
+  padding: 0 4rem 0 4rem;
+  position: absolute;
+  width: 10%;
+  left: 37%;
+  right: 50%;
+}
+#icon_tripadvisor {
+  width: 3rem;
+  height: 3rem;
+  background: url(../media/social_media/logo_tripadvisor_black.png) no-repeat;
+  background-size: 2.8rem;
+}
+#icon_tripadvisor:hover {
+  background: url(../media/social_media/logo_tripadvisor.png) no-repeat;
+  background-size: 2.8rem;
+}
+#icon_facebook {
+width: 3rem;
+height: 3rem;
+background: url(../media/social_media/facebook_circle_white.png) no-repeat;
+background-size: 3rem;
+}
+#icon_facebook:hover {
+background: url(../media/social_media/facebook_circle_blue.png) no-repeat;
+background-size: 3rem;
+}
+#icon_googleplus {
+width: 3rem;
+height: 3rem;
+background: url(../media/social_media/google_plus_shape.png) no-repeat center;
+background-size: 2.4rem;
+}
+#icon_googleplus:hover {
+background: url(../media/social_media/google_plus_red.png) no-repeat center;
+background-size: 2.4rem;
+}
+#icon_linkedin {
+width: 3rem;
+height: 3rem;
+background: url(../media/social_media/icons_linkedin.png) no-repeat;
+background-size: 3rem;
+}
+#icon_linkedin:hover {
+background: url(../media/social_media/icons_linkedin_blue.png) no-repeat;
+background-size: 3rem;
+}
+
+#icon_tripadvisor,
+#icon_facebook,
+#icon_googleplus,
+#icon_linkedin {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 2rem;
+}
+#icon_tripadvisor {
+    left: 5rem;
+}
+#icon_facebook {
+    left: 8.2rem;
+}
+#icon_googleplus {
+    left: 11.2rem;
+}
+#icon_linkedin {
+    left: 14.2rem;
+}
+
+/*footer {
+  display: block;
+  position: relative;
+  bottom: -6rem;
+  width: 100%;
+  height:20vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  min-width: 320px;
+}*/
+
+
+@media screen and (max-width:600px) {
+#main_content,
+#left_column,
+aside {
+        width: 90%;
+        margin: 1vh;
+        left: 5%;
+        right: 5%;
+    }
+}
