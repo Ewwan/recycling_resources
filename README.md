@@ -3,4 +3,4 @@
 <br/>
 <p>To see the website's look and functionality visit this <a href="https://ewwan.github.io/recycling_resources/." title="recycle" target="_blank">LINK</a></p>
 
-<p><img src="https://i.imgur.com/ZaUSu1e.png" title="Recycle_web_page_screenshot" /></p>
+<p><a href="https://ewwan.github.io/recycling_resources/." target="_blank"><img src="https://i.imgur.com/ZaUSu1e.png" title="Recycle_web_page_screenshot" /></a></p>
